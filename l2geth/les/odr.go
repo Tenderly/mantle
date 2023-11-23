@@ -20,11 +20,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/mclock"
-	"github.com/mantlenetworkio/mantle/l2geth/core"
-	"github.com/mantlenetworkio/mantle/l2geth/ethdb"
-	"github.com/mantlenetworkio/mantle/l2geth/light"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/common/mclock"
+	"github.com/tenderly/optimism/l2geth/core"
+	"github.com/tenderly/optimism/l2geth/ethdb"
+	"github.com/tenderly/optimism/l2geth/light"
+	"github.com/tenderly/optimism/l2geth/log"
 )
 
 // LesOdr implements light.OdrBackend

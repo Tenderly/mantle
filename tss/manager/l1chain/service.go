@@ -13,11 +13,11 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	"github.com/mantlenetworkio/mantle/tss/bindings/tgm"
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/manager/types"
-	"github.com/mantlenetworkio/mantle/tss/slash"
+	"github.com/tenderly/optimism/l2geth/log"
+	"github.com/tenderly/optimism/tss/bindings/tgm"
+	tss "github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/manager/types"
+	"github.com/tenderly/optimism/tss/slash"
 )
 
 type QueryService struct {

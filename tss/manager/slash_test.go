@@ -6,12 +6,12 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/ethereum/go-ethereum/crypto"
-	
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/index"
-	"github.com/mantlenetworkio/mantle/tss/manager/store"
-	"github.com/mantlenetworkio/mantle/tss/slash"
+
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
+	tss "github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/index"
+	"github.com/tenderly/optimism/tss/manager/store"
+	"github.com/tenderly/optimism/tss/slash"
 )
 
 func TestLivenessDetect(t *testing.T) {

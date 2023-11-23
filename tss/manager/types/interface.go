@@ -3,9 +3,9 @@ package types
 import (
 	"github.com/ethereum/go-ethereum/common"
 
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/index"
-	"github.com/mantlenetworkio/mantle/tss/slash"
+	tss "github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/index"
+	"github.com/tenderly/optimism/tss/slash"
 )
 
 type SignService interface {

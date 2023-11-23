@@ -15,19 +15,19 @@ import (
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/mantlenetworkio/mantle/tss/bindings/tgm"
-	"github.com/mantlenetworkio/mantle/tss/bindings/tsh"
+	"github.com/tenderly/optimism/tss/bindings/tgm"
+	"github.com/tenderly/optimism/tss/bindings/tsh"
 
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/influxdata/influxdb/pkg/slices"
-	"github.com/mantlenetworkio/mantle/l2geth/crypto"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/index"
-	"github.com/mantlenetworkio/mantle/tss/manager/metics"
-	"github.com/mantlenetworkio/mantle/tss/manager/types"
-	"github.com/mantlenetworkio/mantle/tss/slash"
-	"github.com/mantlenetworkio/mantle/tss/ws/server"
+	"github.com/tenderly/optimism/l2geth/crypto"
+	"github.com/tenderly/optimism/l2geth/log"
+	tss "github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/index"
+	"github.com/tenderly/optimism/tss/manager/metics"
+	"github.com/tenderly/optimism/tss/manager/types"
+	"github.com/tenderly/optimism/tss/slash"
+	"github.com/tenderly/optimism/tss/ws/server"
 )
 
 type Manager struct {

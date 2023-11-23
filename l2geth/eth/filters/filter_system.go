@@ -24,14 +24,14 @@ import (
 	"sync"
 	"time"
 
-	ethereum "github.com/mantlenetworkio/mantle/l2geth"
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/core"
-	"github.com/mantlenetworkio/mantle/l2geth/core/rawdb"
-	"github.com/mantlenetworkio/mantle/l2geth/core/types"
-	"github.com/mantlenetworkio/mantle/l2geth/event"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	"github.com/mantlenetworkio/mantle/l2geth/rpc"
+	ethereum "github.com/tenderly/optimism/l2geth"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/core"
+	"github.com/tenderly/optimism/l2geth/core/rawdb"
+	"github.com/tenderly/optimism/l2geth/core/types"
+	"github.com/tenderly/optimism/l2geth/event"
+	"github.com/tenderly/optimism/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/rpc"
 )
 
 // Type determines the kind of filter and is used to put the filter in to

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/mantlenetworkio/mantle/l2geth/accounts/keystore"
-	"github.com/mantlenetworkio/mantle/l2geth/cmd/utils"
-	"github.com/mantlenetworkio/mantle/l2geth/crypto"
+	"github.com/tenderly/optimism/l2geth/accounts/keystore"
+	"github.com/tenderly/optimism/l2geth/cmd/utils"
+	"github.com/tenderly/optimism/l2geth/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

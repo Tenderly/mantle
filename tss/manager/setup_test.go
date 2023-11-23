@@ -4,9 +4,9 @@ import (
 	"math/big"
 	"time"
 
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/manager/store"
-	"github.com/mantlenetworkio/mantle/tss/ws/server"
+	tss "github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/manager/store"
+	"github.com/tenderly/optimism/tss/ws/server"
 )
 
 type afterMsgSendFunc func(server.RequestMsg, chan server.ResponseMsg) error

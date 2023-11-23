@@ -1,7 +1,7 @@
 package keygen
 
 import (
-	"github.com/mantlenetworkio/mantle/tss/node/tsslib/common"
+	"github.com/tenderly/optimism/tss/node/tsslib/common"
 )
 
 type Response struct {

@@ -1,28 +1,28 @@
-module github.com/mantlenetworkio/mantle/mt-batcher
+module github.com/tenderly/optimism/mt-batcher
 
 go 1.19
 
-replace github.com/Layr-Labs/datalayr/common => ../datalayr/common
+//replace github.com/Layr-Labs/datalayr/common => ../datalayr/common
+//
+//replace github.com/Layr-Labs/datalayr/lib/merkzg => ../datalayr/lib/merkzg
 
-replace github.com/Layr-Labs/datalayr/lib/merkzg => ../datalayr/lib/merkzg
+replace github.com/tenderly/optimism/l2geth => ../l2geth
 
-replace github.com/mantlenetworkio/mantle/l2geth => ../l2geth
+replace github.com/tenderly/optimism/fraud-proof => ../fraud-proof
 
-replace github.com/mantlenetworkio/mantle/fraud-proof => ../fraud-proof
+replace github.com/tenderly/optimism/metrics => ../metrics
 
-replace github.com/mantlenetworkio/mantle/metrics => ../metrics
-
-replace github.com/mantlenetworkio/mantle/bss-core => ../bss-core
+replace github.com/tenderly/optimism/bss-core => ../bss-core
 
 require (
 	cloud.google.com/go/kms v1.11.0
-	github.com/Layr-Labs/datalayr/common v0.0.0
+	//github.com/Layr-Labs/datalayr/common v0.0.0
 	github.com/decred/dcrd/hdkeychain/v3 v3.0.0
 	github.com/ethereum/go-ethereum v1.10.26
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/labstack/echo/v4 v4.9.0
-	github.com/mantlenetworkio/mantle/bss-core v0.0.0
-	github.com/mantlenetworkio/mantle/l2geth v0.0.0
+	github.com/tenderly/optimism/bss-core v0.0.0
+	github.com/tenderly/optimism/l2geth v0.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.15.1
 	github.com/shurcooL/graphql v0.0.0-20220606043923-3cf50f8a0a29

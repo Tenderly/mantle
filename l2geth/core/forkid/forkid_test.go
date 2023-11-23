@@ -21,9 +21,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/params"
-	"github.com/mantlenetworkio/mantle/l2geth/rlp"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/params"
+	"github.com/tenderly/optimism/l2geth/rlp"
 )
 
 // TestCreation tests that different genesis and fork rule combinations result in

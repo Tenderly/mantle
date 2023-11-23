@@ -26,35 +26,34 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/mantlenetworkio/mantle/fraud-proof/proof"
-	"github.com/mantlenetworkio/mantle/l2geth/accounts"
-	"github.com/mantlenetworkio/mantle/l2geth/accounts/abi/bind"
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	"github.com/mantlenetworkio/mantle/l2geth/consensus"
-	"github.com/mantlenetworkio/mantle/l2geth/consensus/clique"
-	"github.com/mantlenetworkio/mantle/l2geth/consensus/ethash"
-	"github.com/mantlenetworkio/mantle/l2geth/core"
-	"github.com/mantlenetworkio/mantle/l2geth/core/bloombits"
-	"github.com/mantlenetworkio/mantle/l2geth/core/rawdb"
-	"github.com/mantlenetworkio/mantle/l2geth/core/types"
-	"github.com/mantlenetworkio/mantle/l2geth/core/vm"
-	"github.com/mantlenetworkio/mantle/l2geth/eth/downloader"
-	"github.com/mantlenetworkio/mantle/l2geth/eth/filters"
-	"github.com/mantlenetworkio/mantle/l2geth/eth/gasprice"
-	"github.com/mantlenetworkio/mantle/l2geth/ethdb"
-	"github.com/mantlenetworkio/mantle/l2geth/event"
-	"github.com/mantlenetworkio/mantle/l2geth/internal/ethapi"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	"github.com/mantlenetworkio/mantle/l2geth/miner"
-	"github.com/mantlenetworkio/mantle/l2geth/node"
-	"github.com/mantlenetworkio/mantle/l2geth/p2p"
-	"github.com/mantlenetworkio/mantle/l2geth/p2p/enr"
-	"github.com/mantlenetworkio/mantle/l2geth/params"
-	"github.com/mantlenetworkio/mantle/l2geth/rlp"
-	"github.com/mantlenetworkio/mantle/l2geth/rollup"
-	"github.com/mantlenetworkio/mantle/l2geth/rollup/rcfg"
-	"github.com/mantlenetworkio/mantle/l2geth/rpc"
+	"github.com/tenderly/optimism/l2geth/accounts"
+	"github.com/tenderly/optimism/l2geth/accounts/abi/bind"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
+	"github.com/tenderly/optimism/l2geth/consensus"
+	"github.com/tenderly/optimism/l2geth/consensus/clique"
+	"github.com/tenderly/optimism/l2geth/consensus/ethash"
+	"github.com/tenderly/optimism/l2geth/core"
+	"github.com/tenderly/optimism/l2geth/core/bloombits"
+	"github.com/tenderly/optimism/l2geth/core/rawdb"
+	"github.com/tenderly/optimism/l2geth/core/types"
+	"github.com/tenderly/optimism/l2geth/core/vm"
+	"github.com/tenderly/optimism/l2geth/eth/downloader"
+	"github.com/tenderly/optimism/l2geth/eth/filters"
+	"github.com/tenderly/optimism/l2geth/eth/gasprice"
+	"github.com/tenderly/optimism/l2geth/ethdb"
+	"github.com/tenderly/optimism/l2geth/event"
+	"github.com/tenderly/optimism/l2geth/internal/ethapi"
+	"github.com/tenderly/optimism/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/miner"
+	"github.com/tenderly/optimism/l2geth/node"
+	"github.com/tenderly/optimism/l2geth/p2p"
+	"github.com/tenderly/optimism/l2geth/p2p/enr"
+	"github.com/tenderly/optimism/l2geth/params"
+	"github.com/tenderly/optimism/l2geth/rlp"
+	"github.com/tenderly/optimism/l2geth/rollup"
+	"github.com/tenderly/optimism/l2geth/rollup/rcfg"
+	"github.com/tenderly/optimism/l2geth/rpc"
 )
 
 type LesServer interface {
@@ -303,7 +302,7 @@ func (s *Ethereum) APIs() []rpc.API {
 	apis := ethapi.GetAPIs(s.APIBackend)
 
 	// <FRAUD-PROOF modification>
-	apis = append(apis, proof.APIs(s.APIBackend)...)
+	//apis = append(apis, proof.APIs(s.APIBackend)...)
 	// <FRAUD-PROOF modification>
 
 	// Append any APIs exposed explicitly by the les server

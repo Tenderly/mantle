@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-resty/resty/v2"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	"github.com/mantlenetworkio/mantle/tss/common"
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
+	"github.com/tenderly/optimism/tss/common"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 )
 

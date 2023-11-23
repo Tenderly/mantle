@@ -8,8 +8,8 @@ import (
 	tmsync "github.com/tendermint/tendermint/libs/sync"
 	tmtypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	"github.com/mantlenetworkio/mantle/tss/ws/client/tm"
+	"github.com/tenderly/optimism/l2geth/log"
+	"github.com/tenderly/optimism/tss/ws/client/tm"
 )
 
 type WSClients struct {

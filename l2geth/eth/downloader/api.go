@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/mantlenetworkio/mantle/l2geth"
-	"github.com/mantlenetworkio/mantle/l2geth/event"
-	"github.com/mantlenetworkio/mantle/l2geth/rpc"
+	ethereum "github.com/tenderly/optimism/l2geth"
+	"github.com/tenderly/optimism/l2geth/event"
+	"github.com/tenderly/optimism/l2geth/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

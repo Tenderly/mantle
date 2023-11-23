@@ -24,9 +24,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	"github.com/mantlenetworkio/mantle/l2geth/internal/ethapi"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
+	"github.com/tenderly/optimism/l2geth/internal/ethapi"
+	"github.com/tenderly/optimism/l2geth/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

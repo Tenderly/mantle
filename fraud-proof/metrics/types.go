@@ -1,6 +1,6 @@
 package metrics
 
-import "github.com/mantlenetworkio/mantle/metrics"
+import "github.com/tenderly/optimism/metrics"
 
 type (
 	Size struct {

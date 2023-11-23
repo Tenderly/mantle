@@ -14,12 +14,12 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/mantlenetworkio/mantle/gas-oracle/bindings"
-	"github.com/mantlenetworkio/mantle/gas-oracle/gasprices"
-	ometrics "github.com/mantlenetworkio/mantle/gas-oracle/metrics"
-	"github.com/mantlenetworkio/mantle/gas-oracle/tokenprice"
-	"github.com/mantlenetworkio/mantle/l2geth/core/rawdb"
-	"github.com/mantlenetworkio/mantle/l2geth/ethdb"
+	"github.com/tenderly/optimism/gas-oracle/bindings"
+	"github.com/tenderly/optimism/gas-oracle/gasprices"
+	ometrics "github.com/tenderly/optimism/gas-oracle/metrics"
+	"github.com/tenderly/optimism/gas-oracle/tokenprice"
+	"github.com/tenderly/optimism/l2geth/core/rawdb"
+	"github.com/tenderly/optimism/l2geth/ethdb"
 )
 
 const GAS_ORACLE_SYNC_HEIGHT = "GAS_ORACLE_SYNC_HEIGHT"

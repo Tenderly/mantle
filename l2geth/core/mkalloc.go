@@ -35,8 +35,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/mantlenetworkio/mantle/l2geth/core"
-	"github.com/mantlenetworkio/mantle/l2geth/rlp"
+	"github.com/tenderly/optimism/l2geth/core"
+	"github.com/tenderly/optimism/l2geth/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

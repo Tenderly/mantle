@@ -21,9 +21,9 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/ethdb/memorydb"
-	"github.com/mantlenetworkio/mantle/l2geth/trie"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/ethdb/memorydb"
+	"github.com/tenderly/optimism/l2geth/trie"
 )
 
 // randTest performs random trie operations.

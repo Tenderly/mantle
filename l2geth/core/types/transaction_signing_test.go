@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/crypto"
-	"github.com/mantlenetworkio/mantle/l2geth/rlp"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/crypto"
+	"github.com/tenderly/optimism/l2geth/rlp"
 )
 
 func TestEIP155Signing(t *testing.T) {

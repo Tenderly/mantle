@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	tsscommon "github.com/mantlenetworkio/mantle/tss/common"
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
+	tsscommon "github.com/tenderly/optimism/tss/common"
 	tdtypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
 )
 

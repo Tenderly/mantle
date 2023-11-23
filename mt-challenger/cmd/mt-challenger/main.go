@@ -9,8 +9,8 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/mantlenetworkio/mantle/mt-challenger"
-	"github.com/mantlenetworkio/mantle/mt-challenger/flags"
+	"github.com/tenderly/optimism/mt-challenger"
+	"github.com/tenderly/optimism/mt-challenger/flags"
 )
 
 var (

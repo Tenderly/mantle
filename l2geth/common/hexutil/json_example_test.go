@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
+	"github.com/tenderly/optimism/l2geth/common/hexutil"
 )
 
 type MyType [5]byte

@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/crypto"
-	whisper "github.com/mantlenetworkio/mantle/l2geth/whisper/whisperv6"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/l2geth/crypto"
+	whisper "github.com/tenderly/optimism/l2geth/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

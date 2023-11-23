@@ -26,7 +26,7 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/mantlenetworkio/mantle/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/log"
 )
 
 var (

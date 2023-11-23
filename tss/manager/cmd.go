@@ -13,14 +13,14 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
 
-	"github.com/mantlenetworkio/mantle/l2geth/log"
-	"github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/index"
-	"github.com/mantlenetworkio/mantle/tss/manager/l1chain"
-	"github.com/mantlenetworkio/mantle/tss/manager/router"
-	"github.com/mantlenetworkio/mantle/tss/manager/store"
-	"github.com/mantlenetworkio/mantle/tss/slash"
-	"github.com/mantlenetworkio/mantle/tss/ws/server"
+	"github.com/tenderly/optimism/l2geth/log"
+	"github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/index"
+	"github.com/tenderly/optimism/tss/manager/l1chain"
+	"github.com/tenderly/optimism/tss/manager/router"
+	"github.com/tenderly/optimism/tss/manager/store"
+	"github.com/tenderly/optimism/tss/slash"
+	"github.com/tenderly/optimism/tss/ws/server"
 )
 
 const (

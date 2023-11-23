@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/mclock"
-	"github.com/mantlenetworkio/mantle/l2geth/light"
+	"github.com/tenderly/optimism/l2geth/common/mclock"
+	"github.com/tenderly/optimism/l2geth/light"
 )
 
 var (

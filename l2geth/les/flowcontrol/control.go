@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/mclock"
-	"github.com/mantlenetworkio/mantle/l2geth/log"
+	"github.com/tenderly/optimism/l2geth/common/mclock"
+	"github.com/tenderly/optimism/l2geth/log"
 )
 
 const (

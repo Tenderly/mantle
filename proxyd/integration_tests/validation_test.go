@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mantlenetworkio/mantle/proxyd"
+	"github.com/tenderly/optimism/proxyd"
 	"github.com/stretchr/testify/require"
 )
 

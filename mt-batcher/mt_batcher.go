@@ -10,15 +10,14 @@ import (
 	ethc "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/mt-batcher/bindings"
-	"github.com/mantlenetworkio/mantle/mt-batcher/l1l2client"
-	"github.com/mantlenetworkio/mantle/mt-batcher/metrics"
-	common2 "github.com/mantlenetworkio/mantle/mt-batcher/services/common"
-	"github.com/mantlenetworkio/mantle/mt-batcher/services/restorer"
-	"github.com/mantlenetworkio/mantle/mt-batcher/services/sequencer"
+	"github.com/tenderly/optimism/l2geth/common"
+	"github.com/tenderly/optimism/mt-batcher/bindings"
+	"github.com/tenderly/optimism/mt-batcher/l1l2client"
+	"github.com/tenderly/optimism/mt-batcher/metrics"
+	common2 "github.com/tenderly/optimism/mt-batcher/services/common"
+	"github.com/tenderly/optimism/mt-batcher/services/restorer"
+	"github.com/tenderly/optimism/mt-batcher/services/sequencer"
 
-	"github.com/Layr-Labs/datalayr/common/logging"
 	"github.com/urfave/cli"
 )
 
@@ -96,10 +95,10 @@ func NewMantleBatch(cfg Config) (*MantleBatch, error) {
 		return nil, err
 	}
 
-	logger, err := logging.GetLogger(cfg.EigenLogConfig)
-	if err != nil {
-		return nil, err
-	}
+	//logger, err := logging.GetLogger(cfg.EigenLogConfig)
+	//if err != nil {
+	//	return nil, err
+	//}
 	parsed, err := abi.JSON(strings.NewReader(
 		bindings.BVMEigenDataLayrChainABI,
 	))
@@ -135,18 +134,18 @@ func NewMantleBatch(cfg Config) (*MantleBatch, error) {
 	)
 
 	driverConfig := &sequencer.DriverConfig{
-		L1Client:                  l1Client,
-		L2Client:                  l2Client,
-		L1ChainID:                 chainID,
-		DtlClientUrl:              cfg.DtlClientUrl,
-		EigenDaContract:           eigenContract,
-		RawEigenContract:          rawEigenContract,
-		EigenFeeContract:          eigenFeeContract,
-		RawEigenFeeContract:       rawEigenFeeContract,
-		FeeModelEnable:            cfg.FeeModelEnable,
-		FeeSizeSec:                cfg.FeeSizeSec,
-		FeePerBytePerTime:         cfg.FeePerBytePerTime,
-		Logger:                    logger,
+		L1Client:            l1Client,
+		L2Client:            l2Client,
+		L1ChainID:           chainID,
+		DtlClientUrl:        cfg.DtlClientUrl,
+		EigenDaContract:     eigenContract,
+		RawEigenContract:    rawEigenContract,
+		EigenFeeContract:    eigenFeeContract,
+		RawEigenFeeContract: rawEigenFeeContract,
+		FeeModelEnable:      cfg.FeeModelEnable,
+		FeeSizeSec:          cfg.FeeSizeSec,
+		FeePerBytePerTime:   cfg.FeePerBytePerTime,
+		//Logger:                    logger,
 		PrivKey:                   sequencerPrivKey,
 		FeePrivKey:                mtFeePrivateKey,
 		BlockOffset:               cfg.BlockOffset,

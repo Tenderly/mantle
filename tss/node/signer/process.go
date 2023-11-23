@@ -15,15 +15,15 @@ import (
 	ethc "github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 
-	"github.com/mantlenetworkio/mantle/bss-core/dial"
-	l2ethclient "github.com/mantlenetworkio/mantle/l2geth/ethclient"
-	"github.com/mantlenetworkio/mantle/tss/bindings/tgm"
-	"github.com/mantlenetworkio/mantle/tss/bindings/tsh"
-	"github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/manager/l1chain"
-	"github.com/mantlenetworkio/mantle/tss/node/tsslib"
-	"github.com/mantlenetworkio/mantle/tss/node/types"
-	"github.com/mantlenetworkio/mantle/tss/ws/client"
+	"github.com/tenderly/optimism/bss-core/dial"
+	l2ethclient "github.com/tenderly/optimism/l2geth/ethclient"
+	"github.com/tenderly/optimism/tss/bindings/tgm"
+	"github.com/tenderly/optimism/tss/bindings/tsh"
+	"github.com/tenderly/optimism/tss/common"
+	"github.com/tenderly/optimism/tss/manager/l1chain"
+	"github.com/tenderly/optimism/tss/node/tsslib"
+	"github.com/tenderly/optimism/tss/node/types"
+	"github.com/tenderly/optimism/tss/ws/client"
 )
 
 type Processor struct {
