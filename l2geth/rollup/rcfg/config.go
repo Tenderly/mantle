@@ -1,15 +1,15 @@
 package rcfg
 
 import (
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
 	"math/big"
-	"os"
+
+	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
 
 	"github.com/mantlenetworkio/mantle/l2geth/common"
 )
 
 // UsingBVM is used to enable or disable functionality necessary for the BVM.
-var UsingBVM bool
+const UsingBVM = true
 
 var (
 	// L2GasPriceSlot refers to the storage slot that the L2 gas price is stored
@@ -52,7 +52,3 @@ var (
 	// holds switch controls whether enable DA
 	DaSwitchSlot = common.BigToHash(big.NewInt(10))
 )
-
-func init() {
-	UsingBVM = os.Getenv("USING_BVM") == "true"
-}

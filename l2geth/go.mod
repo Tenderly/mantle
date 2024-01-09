@@ -128,3 +128,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gotest.tools/v3 v3.4.0 // indirect
 )
+
+exclude github.com/Layr-Labs/datalayr/common v0.0.0
+
+exclude github.com/Layr-Labs/datalayr/lib/merkzg v0.0.0
