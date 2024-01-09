@@ -7,8 +7,8 @@ import (
 
 	"github.com/Layr-Labs/datalayr/common/logging"
 
-	"github.com/mantlenetworkio/mantle/mt-challenger/challenger"
-	"github.com/mantlenetworkio/mantle/mt-challenger/flags"
+	"github.com/tenderly/mantle/mt-challenger/challenger"
+	"github.com/tenderly/mantle/mt-challenger/flags"
 )
 
 type Config struct {

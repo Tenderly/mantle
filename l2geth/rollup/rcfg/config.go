@@ -3,9 +3,9 @@ package rcfg
 import (
 	"math/big"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
+	"github.com/tenderly/mantle/l2geth/common/hexutil"
 
-	"github.com/mantlenetworkio/mantle/l2geth/common"
+	"github.com/tenderly/mantle/l2geth/common"
 )
 
 // UsingBVM is used to enable or disable functionality necessary for the BVM.

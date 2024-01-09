@@ -20,10 +20,10 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/rlp"
 
-	common2 "github.com/mantlenetworkio/mantle/l2geth/common"
-	"github.com/mantlenetworkio/mantle/l2geth/core/types"
-	l2rlp "github.com/mantlenetworkio/mantle/l2geth/rlp"
-	"github.com/mantlenetworkio/mantle/l2geth/rollup/eigenda"
+	common2 "github.com/tenderly/mantle/l2geth/common"
+	"github.com/tenderly/mantle/l2geth/core/types"
+	l2rlp "github.com/tenderly/mantle/l2geth/rlp"
+	"github.com/tenderly/mantle/l2geth/rollup/eigenda"
 )
 
 const (

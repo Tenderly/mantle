@@ -7,11 +7,11 @@ import (
 
 	"github.com/ethereum/go-ethereum/crypto"
 	
-	"github.com/mantlenetworkio/mantle/l2geth/common/hexutil"
-	tss "github.com/mantlenetworkio/mantle/tss/common"
-	"github.com/mantlenetworkio/mantle/tss/index"
-	"github.com/mantlenetworkio/mantle/tss/manager/store"
-	"github.com/mantlenetworkio/mantle/tss/slash"
+	"github.com/tenderly/mantle/l2geth/common/hexutil"
+	tss "github.com/tenderly/mantle/tss/common"
+	"github.com/tenderly/mantle/tss/index"
+	"github.com/tenderly/mantle/tss/manager/store"
+	"github.com/tenderly/mantle/tss/slash"
 )
 
 func TestLivenessDetect(t *testing.T) {
